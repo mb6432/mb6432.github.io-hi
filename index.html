@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <script src="loader.js"></script>
+    <script src="loader.js" defer></script>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
     <!-- whereis my video -->
     <div id="contain-all">
         <div class="item">
-            <video width="100%" height="100%" class="rr" autoplay>
+            <video width="100%" height="100%" class="rr" id="video-main" autoplay>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
@@ -57,44 +57,14 @@
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item" id="marker">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
-            <video width="100%" height="100%" class="rr" autoplay muted>
-                <source src="rr.mp4" type="video/mp4">
-                <source src="rr.webm" type="video/webm">
-                Nothing for you. चला जा ...
-            </video>
-        </div>
-
-
-        <div class="item">
-            <video width="100%" height="100%" class="rr" autoplay muted>
-                <source src="rr.mp4" type="video/mp4">
-                <source src="rr.webm" type="video/webm">
-                Nothing for you. चला जा ...
-            </video>
-        </div>
-        <div class="item">
-            <video width="100%" height="100%" class="rr" autoplay muted>
-                <source src="rr.mp4" type="video/mp4">
-                <source src="rr.webm" type="video/webm">
-                Nothing for you. चला जा ...
-            </video>
-        </div>
-        <div class="item">
-            <video width="100%" height="100%" class="rr" autoplay muted>
-                <source src="rr.mp4" type="video/mp4">
-                <source src="rr.webm" type="video/webm">
-                Nothing for you. चला जा ...
-            </video>
-        </div>
-        <div class="item">
+        <div class="item del">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
@@ -102,28 +72,29 @@
             </video>
         </div>
 
-        <div class="item">
+
+        <div class="item del">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item del">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item del mark-up">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item del mark-up">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
@@ -131,28 +102,57 @@
             </video>
         </div>
 
-        <div class="item">
+        <div class="item del mark-up">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item del">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item del">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
                 Nothing for you. चला जा ...
             </video>
         </div>
-        <div class="item">
+        <div class="item del">
+            <video width="100%" height="100%" class="rr" autoplay muted>
+                <source src="rr.mp4" type="video/mp4">
+                <source src="rr.webm" type="video/webm">
+                Nothing for you. चला जा ...
+            </video>
+        </div>
+
+        <div class="item del">
+            <video width="100%" height="100%" class="rr" autoplay muted>
+                <source src="rr.mp4" type="video/mp4">
+                <source src="rr.webm" type="video/webm">
+                Nothing for you. चला जा ...
+            </video>
+        </div>
+        <div class="item del">
+            <video width="100%" height="100%" class="rr" autoplay muted>
+                <source src="rr.mp4" type="video/mp4">
+                <source src="rr.webm" type="video/webm">
+                Nothing for you. चला जा ...
+            </video>
+        </div>
+        <div class="item del">
+            <video width="100%" height="100%" class="rr" autoplay muted>
+                <source src="rr.mp4" type="video/mp4">
+                <source src="rr.webm" type="video/webm">
+                Nothing for you. चला जा ...
+            </video>
+        </div>
+        <div class="item del">
             <video width="100%" height="100%" class="rr" autoplay muted>
                 <source src="rr.mp4" type="video/mp4">
                 <source src="rr.webm" type="video/webm">
