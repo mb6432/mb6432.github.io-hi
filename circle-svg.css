@@ -1,0 +1,130 @@
+.svg {
+    width: 100%;
+}
+
+.svg ellipse {
+    rx: 100;
+    ry: 25;
+    stroke: none;
+}
+
+.svg .float-circles {
+    cx: 200;
+    cy: 300;
+    fill: none;
+    stroke: violet;
+    stroke-dasharray: 50px;
+    /* stroke-dashoffset: 10px; */
+    stroke-width: 3px;
+    transform-origin: 200px 175px;
+    animation: rot-dash 3s linear infinite;
+}
+
+.svg .second {
+    stroke: red;
+    animation-timing-function: ease;
+}
+
+.svg .third {
+    stroke: blue;
+    animation-timing-function: ease-in;
+}
+
+.svg .forth {
+    stroke: green;
+    animation-timing-function: ease-in-out;
+}
+
+
+.svg .base-circles {
+    stroke: rgba(255, 255, 255, 0.5);
+    animation: stack-eff 3s linear infinite;
+}
+
+.base-circles:first-child {
+    animation-delay: 800ms;
+}
+
+.base-circles:nth-child(2) {
+    animation-delay: 700ms;
+}
+
+.base-circles:nth-child(3) {
+    animation-delay: 600ms;
+}
+
+.base-circles:nth-child(4) {
+    animation-delay: 500ms;
+}
+
+.base-circles:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+.base-circles:nth-child(6) {
+    animation-delay: 300ms;
+}
+
+.base-circles:nth-child(7) {
+    animation-delay: 200ms;
+}
+
+.base-circles:nth-child(8) {
+    animation-delay: 100ms;
+}
+
+
+
+.base-circles:hover {
+    fill: gray;
+
+}
+
+@keyframes only-rotation {
+    from {
+        transform-origin: center;
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform-origin: center;
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes rot-dash {
+    from {
+        /* transform-origin: center; */
+        transform: rotateZ(0deg);
+        stroke-dashoffset: 0px;
+    }
+
+    to {
+        /* transform-origin: center; */
+        transform: rotateZ(360deg);
+        stroke-dashoffset: 1000px;
+    }
+}
+
+@keyframes dash-offset-anim {
+    from {
+        stroke-dashoffset: 0px;
+    }
+
+    to {
+        stroke-dashoffset: 100px;
+    }
+}
+
+@keyframes stack-eff {
+
+    3% {
+        fill: whitesmoke;
+    }
+
+    6% {
+        /* fill: rgba(100, 100, 54, 0.5); */
+        fill: initial;
+    }
+
+}

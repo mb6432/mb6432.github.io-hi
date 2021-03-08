@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" class="svg">
+    <ellipse rx="100" ry="20" cx="200" cy="100" />
+    <ellipse rx="100" ry="20" cx="200" cy="90" class="second" />
+    <ellipse rx="100" ry="20" cx="200" cy="80" class="third" />
+    <ellipse rx="100" ry="20" cx="200" cy="110" class="forth" />
+</svg>
+
+<!-- 
+define them in html or css file not here 
+and also paste this defn of svg
+(where which ~this~ svg is to be used)
+[define here to preview in VS code]
+<style>
+    .svg {
+        background-color: aqua;
+    }
+
+    .svg>ellipse {
+        rx: 100;
+        ry: 25;
+        cx: 200;
+        cy: 300;
+        fill: none;
+        stroke: aqua;
+        stroke-dasharray: 50px;
+
+        stroke-width: 3px;
+        transform-origin: center;
+        animation: rot-dash 3s linear infinite;
+    }
+
+    .svg>.second {
+        stroke: red;
+        animation-timing-function: ease;
+    }
+
+    .svg>.third {
+        stroke: blue;
+        animation-timing-function: ease-in;
+    }
+
+    .svg>.forth {
+        stroke: green;
+        animation-timing-function: ease-in-out;
+    }
+
+    .svg>circle {
+        fill: none;
+        stroke: orange;
+        stroke-width: 4px;
+        stroke-dasharray: 50px;
+        transform-origin: center;
+        animation: only-rotation 3s linear infinite;
+    }
+
+    @keyframes only-rotation {
+        from {
+            transform-origin: center;
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform-origin: center;
+            transform: rotateZ(-360deg);
+        }
+    }
+
+    @keyframes rot-dash {
+        from {
+
+            transform: rotateZ(0deg);
+            stroke-dashoffset: 0px;
+        }
+
+        to {
+
+            transform: rotateZ(360deg);
+            stroke-dashoffset: 1000px;
+        }
+    }
+
+    @keyframes dash-offset-anim {
+        from {
+            stroke-dashoffset: 0px;
+        }
+
+        to {
+            stroke-dashoffset: 100px;
+        }
+    }
+</style> -->

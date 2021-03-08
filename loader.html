@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading</title>
+    <link rel="stylesheet" href="circle-svg.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="loader.js"></script>
+
+</head>
+
+<body>
+    <div id="loader">
+        <div id="load-anim">
+            <svg class="svg" viewBox="0 0 400 400 ">
+                <g id="stack">
+                    <ellipse cx="200" cy="370" class="base-circles" />
+                    <ellipse cx="200" cy="360" class="base-circles" />
+                    <ellipse cx="200" cy="350" class="base-circles" />
+                    <ellipse cx="200" cy="340" class="base-circles" />
+                    <ellipse cx="200" cy="330" class="base-circles" />
+                    <ellipse cx="200" cy="320" class="base-circles" />
+                    <ellipse cx="200" cy="310" class="base-circles" />
+                    <ellipse cx=" 200" cy="302" class="base-circles" />
+                </g>
+
+                <g id="floaters">
+                    <ellipse class="float-circles" />
+                    <ellipse class='float-circles second' />
+                    <ellipse class='float-circles third' />
+                    <ellipse class='float-circles forth' />
+                    <ellipse class="float-circles fifth" />
+                </g>
+            </svg>
+        </div>
+
+    </div>
+
+    <div class="content"></div>
+</body>
+
+</html>
