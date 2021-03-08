@@ -32,4 +32,4 @@ const hideLoadingAnimation = e => {
 
 
 let video = document.getElementById('video-main')
-video.addEventListener('loadeddata', hideLoadingAnimation)
+video.addEventListener('load', hideLoadingAnimation)
